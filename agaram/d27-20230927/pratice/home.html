@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+            #table1{
+                margin-left: 40%;
+                margin-top: 5%;
+                /* display: none; */
+                
+            }
+          
+        </style>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    </head>
+    <body>
+    
+    <div id="home">
+        <h1 id="welcome">welcome</h1><br>
+        <input onclick="home()" type="button" value="logout"/>
+        <!-- <input  type="button" value="option" onclick="getdata()"/> -->
+        <div id="table1" >
+            <table border="1px">
+                <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>update</th>
+                <th>delete</th>
+                </thead>
+                <tbody id="rowadding">
+                    
+                </tbody>
+               
+                
+            </table>
+        </div>
+    </div>
+    <script src="appli.js"></script>
+    <script>checklogin()</script>
+    <script>secure()</script>
+    
+    </body>
+</html>
