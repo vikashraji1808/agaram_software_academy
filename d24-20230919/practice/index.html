@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css"/>
+        
+    </head>
+    <body>
+        <div id="Login">
+
+            <form id="a">
+                <h1>Log in</h1>
+                <label>Name:</label><input id="name" type="text" placeholder="Enter your name" /><br><br>
+                <label>Email:</label><input id="email" type="email" placeholder="Enter the Email" /><br><br>
+                <label>password:</label><input id="password" type="password" placeholder="Enter the password"/><br><br>
+                <input onclick="log()" type="button" value="login"/>
+                <input onclick="regis()" type="button" value="register"/>
+            </form>
+        </div>
+        <div id="home">
+            <h1 id="welcome">welcome</h1><br>
+            <input onclick="home()" type="button" value="logout"/>
+            <!-- <input  type="button" value="option" onclick="getdata()"/> -->
+            <div id="table1" >
+                <table border="1px">
+                    <thead>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>update</th>
+                    <th>delete</th>
+                    </thead>
+                    <tbody id="rowadding">
+                        
+                    </tbody>
+                   
+                    
+                </table>
+            </div>
+        </div>
+        <div id="reg">
+            <h1>Register Here</h1>
+            <label>Name:</label><input id="reg_name" type="text" placeholder="Enter your name"/><br><br>
+            <label>Email:</label><input id="reg_email" type="text" placeholder="Enter your email"/><br><br>
+            <label>password:</label><input id="reg_pass" type="password" placeholder="Enter your passsword"/><br><br>
+            <input onclick="getid()" type="button" value="register"/>
+            
+            
+        </div>
+        <div id="edits">
+            <h1>upadating the details</h1>
+            <label>Name:</label><input id="new_name" type="text" placeholder="Enter your name "/><br><br>
+            <label>Email:</label><input id="new_email" type="email" placeholder="Enter your email "/><br><br>
+            <label>passsword:</label><input id="new_password" type="password" placeholder="Enter your passsword "/><br><br>
+            <input onclick="change()" type="button" value="edit" />
+        </div>
+        
+        
+        <script src="index.js"></script>
+        <script>checklogin()</script>
+        
+    </body>
+     
+</html>

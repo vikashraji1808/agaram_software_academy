@@ -1,0 +1,28 @@
+body{
+    background-color: yellowgreen;
+}
+
+#a{ text-align: center;}
+#home{
+  
+    display: none;
+    text-align: center;
+    
+}
+#table1{
+    margin-left: 40%;
+    margin-top: 5%;
+    /* display: none; */
+    
+}
+#reg{
+   
+    text-align: center;
+    display: none;
+   
+}
+#edits{
+    text-align: center;
+    display: none;
+}
+
