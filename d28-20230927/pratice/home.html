@@ -1,26 +1,26 @@
 <html>
     <head>
-        <!-- <style>
-             /* body{
+        <style>
+            body{
                 text-align: center;
             }
             #table1{
                 margin-left: 40%;
                 margin-top: 5%;
-                 display: none; 
+                /* display: none; */
                 
-             }  */
-        
-        </style> -->
-        <link href="appli.css" rel="stylesheet"/>
-        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+            }
+          
+        </style>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
     </head>
-    <body class="body">
+
+        
+    <body>
     
     <div id="home">
         <h1 id="welcome">welcome</h1><br>
-        <input onclick="home()" type="button" value="logout" class=" btn-primary"/>
+        <input onclick="home()" type="button" value="logout"/>
         <!-- <input  type="button" value="option" onclick="getdata()"/> -->
         <div id="table1" >
             <table border="1px">
@@ -38,7 +38,7 @@
             </table>
         </div>
     </div>
-    <script src="appli.js"></script>
+    <script src="appli.js" type="module"></script>
     <script>checklogin()</script>
     <script>secure()</script>
     

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+                
+            }
+        </style>
+      <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    </head>
+    <body>
+        <div id="reg">
+            <h1>Register Here</h1>
+            <label>Name:</label><input id="reg_name" type="text" placeholder="Enter your name"/><br><br>
+            <label>Email:</label><input id="reg_email" type="text" placeholder="Enter your email"/><br><br>
+            <label>password:</label><input id="reg_pass" type="password" placeholder="Enter your passsword"/><br><br>
+            <input onclick="registerform()" type="button" value="register"/>
+        </div>
+        <script src="appli.js" type="module"></script>
+        <!-- <script>checklogin()</script> -->
+    </body>
+</html>

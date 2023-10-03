@@ -1,0 +1,47 @@
+.child1{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border: 1px solid rgb(21, 21, 19);
+    margin: 10px;
+    padding: 50px;
+    
+    
+}
+.child2{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: yellow;
+    
+}
+body{
+    /* position: relative; */
+    background-color: blue;
+   
+
+}
+p{
+    margin: 5px;
+    background-color: grey;
+    border: 2px solid black;
+   /* position: absolute;
+  top: 0;
+   right: 0; */
+}
+ul{
+border: 1px solid black;
+padding: 5px;
+background-color: white;
+/* position: absolute;
+bottom: 0;
+right: 0; */
+}
+li{
+    display:inline-block;
+    border: 1px solid black;
+    /* margin: 10px; */
+    padding: 8px;
+  
+    
+}

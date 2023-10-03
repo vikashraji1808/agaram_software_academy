@@ -8,15 +8,21 @@
         </style>
         <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+        <link href="appli.css" rel="stylesheet"/>
     </head>
-    <body>
+    <body class="body">
         <div id="reg">
-            <h1>Register Here</h1>
-            <label>Name:</label><input id="reg_name" type="text" placeholder="Enter your name"/><br><br>
-            <label>Email:</label><input id="reg_email" type="text" placeholder="Enter your email"/><br><br>
-            <label>password:</label><input id="reg_pass" type="password" placeholder="Enter your passsword"/><br><br>
-            <input onclick="register()" type="button" value="register"/>
-            
+            <form class="mx-auto">
+
+                <h1>Register Here</h1>
+                <label>Name:</label>
+                <input id="reg_name" type="text" class=" box" placeholder="Enter your name"/><br><br>
+                <label>Email:</label>
+                <input id="reg_email" type="text" placeholder="Enter your email"  class=" box"/><br><br>
+                <label>password:</label>
+                <input id="reg_pass" type="password" placeholder="Enter your passsword" class=" box"/><br><br>
+                <input onclick="register()" type="button" value="register" class=" btn-primary"/>
+            </form>
             
         </div>
         <script src="appli.js"></script>
