@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link href="resume.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="q" id="downld">
+        <div class="a">
+              <div class="b">
+                 <!-- <img class="img1" src="n.jpeg" width="100px"  /> -->
+                 <h4 id="name"></h4>
+                 <label>student</label><br><br>
+                 <label>email:</label>
+                 <a href="mailto:vickymeenu023@gmail.com" id="email"></a><br><br>
+                 <label id="phone"></label><br><br>
+                 <h2>personal_details:</h2>
+                 <label>father_name:</label><a id="fathername"></a><br><br>
+                 <label>mother_name:</label><a id="mothername"></a><br>
+                 <label>dob:</label><a id="dob"></a><br><br>
+                 <label>age:</label><a>22</a><br><br>
+                 <label>gender:</label><a id="gender"></a><br><br>
+                 <address id="address"></address>
+  
+              </div>
+              <div class="c">
+               <!-- <img src="photo-1619964478337-12e178409359.jpeg" class="img2"/> -->
+                 <h3>objective:</h3><a id="objective"></a>
+                 <h3>education:</h3>
+               <table >
+                  <thead>
+                     <tr>
+                        <th>inst_name</th>
+                        <th>inst_level</th>
+                        <th>inst_year</th>
+                        <th>inst_percentage</th>
+                     </tr>
+                  </thead>
+
+                  <tbody id="edu_tab">
+
+                  </tbody>
+               </table>
+                 <h3>skills:</h3>
+                 <ol id="skill_li">
+                    <li></li>
+                    <li></li>
+                 </ol>
+                 <h3>project:</h3>
+                 <ol>
+                    <li>cool water tranfer to heat water.</li>
+                 </ol>
+                 <h3>language known:</h3>
+                 <ol id="lang_li">
+                    <li></li>
+                    <li></li>
+                 </ol>
+                 <h3>hobbys:</h3>
+                 <ol>
+                    <li>pubg.</li>
+                    <li>gym.</li>
+                 </ol>
+                 <h3>industrial visits:</h3>
+                 <ul>
+                    <li>thermal powerplant. </li>
+                    <li>CNC.</li>
+                 </ul>
+                 
+  
+              </div>
+        </div>
+     </div>
+     <button type="button" onclick="download()">download</button>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="resume.js"></script>
+<script>
+    var user_id=getUrlParameter('id');
+        console.log(user_id)
+        list_data(user_id)
+</script>
+</html>
