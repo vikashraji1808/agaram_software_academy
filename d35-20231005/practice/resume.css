@@ -28,9 +28,7 @@
     color: white;
     text-align: center;
     padding-bottom: 8%;
-
-
- }
+  }
 
  .c {
     /* margin-left: 8px; */
@@ -55,4 +53,7 @@
     margin: 0 20% ;
     position: relative;
 
+ }
+ label{
+   text-decoration:underline;
  }

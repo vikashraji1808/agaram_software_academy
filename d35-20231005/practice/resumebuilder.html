@@ -88,11 +88,11 @@
                      <input type="text" id="skill" class="form-control">
                     </div>
                     <div class="col-3">
-                    <button type="button" class="btn btn-success" onclick="add_skill(`skills`,`skill`)" >Add</button>
+                    <button type="button" class="btn btn-success" onclick="add(`skills`,`skill`)" >Add</button>
 
                     </div>
 
-                    <div id="lists">
+                    <div id="skills">
 
                     </div>
                 </div>
@@ -102,9 +102,21 @@
                      <input type="text" id="lang" class="form-control" >
                     </div>
                     <div  class="col-3">
-                     <button type="button" class="btn btn-success" onclick="add_lang(`language`,`lang`)" >Add</button>
+                     <button type="button" class="btn btn-success" onclick="add(`language`,`lang`)" >Add</button>
                     </div>
-                    <div id="lang_list">
+                    <div id="language">
+
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <h3>project</h3>
+                    <div class="col-2">
+                     <input type="text" id="pjid" class="form-control" >
+                    </div>
+                    <div  class="col-3">
+                     <button type="button" class="btn btn-success" onclick="add(`project`,`pjid`)" >Add</button>
+                    </div>
+                    <div id="project">
 
                     </div>
                 </div>
@@ -123,13 +135,59 @@
                         <input type="number" name="inst_percentage"  id="inst_percentage" class="form-control" placeholder="percentage" onkeyup="setdata(this)">
                     </div>
                     <div class="col-3">
-                        <button type="button" class="btn btn-success"  onclick="edu('education','education_lit')">Add</button>
+                        <button type="button" class="btn btn-success"  onclick="edu('education')">Add</button>
     
                     </div>
-                    <div id="education_lit">
+                <table class="table">
+                    <thead>
+                        <tr>
+            
+                            <th scope="col">inst_name</th>
+                            <th scope="col">inst_level</th>
+                            <th scope="col">inst_year</th>
+                            <th scope="col">inst_percentage</th> 
+                            <th scope="col">delete</th> 
+                        </tr>
+                    </thead>
+                    <tbody id="education">
 
+                    </tbody>
+                </table>
+                   
+                </div>
+                <div class="mb-3 row">
+                    <h3>experiance</h3>
+                    <div class="col-2">
+                     <input type="text" name="company" id="company" class="form-control" placeholder="company"  onkeyup="setdata(this)" >
                     </div>
-                    
+                    <div class="col-2">
+                        <input type="text"  name="role"  id="role" class="form-control" placeholder="role"onkeyup="setdata(this)">
+                    </div>
+                    <div class="col-2">
+                        <input type="number" name="year"  id="year" class="form-control" placeholder="year" onkeyup="setdata(this)">
+                    </div>
+                    <div class="col-2">
+                        <input type="number" name="package"  id="package" class="form-control" placeholder="package" onkeyup="setdata(this)">
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-success"  onclick="edu('experiance')">Add</button>
+    
+                    </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+            
+                            <th scope="col">company</th>
+                            <th scope="col">role</th>
+                            <th scope="col">year</th>
+                            <th scope="col">package</th> 
+                            <th scope="col">delete</th> 
+                        </tr>
+                    </thead>
+                    <tbody id="experiance">
+
+                    </tbody>
+                </table>
                    
                 </div>
                 <button type="button" class="btn btn-success"  onclick="create()">submit</button>
