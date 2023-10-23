@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: blue;
+    }
+    .container{
+        background-color: beige;
+        max-width: 800px;
+        margin: 60px auto;
+        height: 1200px;
+        padding: 20px;
+    }
+    .header{
+        text-align: center;
+    }
+    .header h4{
+        margin-bottom: 10px;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        overflow: hidden;
+        margin: 25px auto;
+        border: 15px groove skyblue;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left{
+        flex: 1;
+        padding: 10px;
+    }
+    h3{
+        background-color: cadetblue;
+        padding:15px ;
+        color: white;
+        margin: 30px 0;
+        font-size:20px;
+        border: 0 50px 50px 0;
+    }
+    .rught{
+        flex: 1;
+        padding: 60px;
+    }
+    
+
+    </style>
+</head>
+<body>
+   <div class="container">
+      <div class="header">
+         <div class="image">
+            <img src="n.jpeg" alt="" >
+         </div>
+         <h4 id="name"></h4><br>
+      </div>
+      <div class="main">
+        <div class="left">
+            <h3>personal_details:</h3>
+            <h4 id="name"></h4><br>
+            <label>email:</label><br>
+            <a href="mailto:vickymeenu023@gmail.com" id="email"></a><br><br>
+            <label>phone:</label><br>
+            <a id="phone"></a> <br>
+            <label>father_name:</label><br>
+            <a id="fathername"></a><br>
+            <label>mother_name:</label><br><a id="mothername"></a><br>
+            <label>dob:</label><br><a id="dob"></a><br>
+            <label>age:</label><br><a>22</a><br>
+            <label>gender:</label><br><a id="gender"></a><br><br>
+            <address id="address"></address>
+            <h3>skills:</h3>
+            <ol id="skill_li">
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+
+            </ol>
+            <h3>language known:</h3>
+            <ol id="lang_li">
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+
+            </ol>
+        </div>
+        <div class="right">
+            <h3>education:</h3>
+            <table  class="table table-bordered">
+               <thead>
+                  <tr>
+                     <th>inst_name</th>
+                     <th>inst_level</th>
+                     <th>inst_year</th>
+                     <th>inst_percentage</th>
+                  </tr>
+               </thead>
+
+               <tbody id="edu_tab">
+
+               </tbody>
+            </table>
+            <h3>experiance:</h3>
+            <table class="table table-bordered">
+               <thead>
+                  <tr>
+                     <th>company</th>
+                     <th>role</th>
+                     <th>year</th>
+                     <th>package</th>
+                  </tr>
+               </thead>
+
+               <tbody id="exp_tab">
+
+               </tbody>
+            </table>
+        </div>
+      </div>
+   </div>
+</body>
+</html>
