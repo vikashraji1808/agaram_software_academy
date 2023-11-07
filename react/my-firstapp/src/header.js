@@ -4,6 +4,7 @@ function Header(props){
         <>
         <h1>agaram</h1>
         <SubHeader fname={props.name}/>
+        <button onClick={()=>props.newname("welcome to agram software academy")}>changename</button>
         </>
     )
 }

@@ -4,4 +4,4 @@ function SubHeader(props){
     )
 }
 
-export default SubHeader
+export default SubHeader;
