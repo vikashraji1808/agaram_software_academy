@@ -1,7 +1,9 @@
 
 import {useState} from 'react'
 import AddTodo from './form'
-function Todo(){
+import { Outlet, Link } from "react-router-dom";
+import Header from '../header';
+function Todo(props){
         let [todos,setTodo]=useState(["take medicine","take power bank","take charger"])
         
         const deleteTodo =(t)=>{
@@ -10,6 +12,8 @@ function Todo(){
         }
             return(
         <>
+          <Header />
+
         <table>
             <tr>
                 <th>order</th>
@@ -28,6 +32,8 @@ function Todo(){
             </tr>
         </table>
     <AddTodo setIteam={setTodo} Iteam={todos}/>
+    {props.IsLogged.status?`"welcome"${props.IsLogged.name}`:"gest id "}
+  
         </>
     )
 }

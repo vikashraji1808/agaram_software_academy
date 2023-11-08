@@ -1,6 +1,8 @@
 
 import {useState} from 'react'
 import AddTodo from './form'
+import { Outlet, Link } from "react-router-dom";
+import Header from '../header';
 function Todo(){
         let [User,setUser]=useState(["barish","vikash","chrish"])
         
@@ -10,6 +12,7 @@ function Todo(){
         }
             return(
         <>
+         <Header />
         <table>
             <tr>
                 <th>order</th>
@@ -28,6 +31,7 @@ function Todo(){
             </tr>
         </table>
     <AddTodo setIteam={setUser} Iteam={User}/>
+
         </>
     )
 }
