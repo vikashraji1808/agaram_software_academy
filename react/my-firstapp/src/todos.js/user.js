@@ -1,19 +1,26 @@
 
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import AddTodo from './form'
 import { Outlet, Link } from "react-router-dom";
 import Header from '../header';
 function Todo(){
-        let [User,setUser]=useState(["barish","vikash","chrish"])
+        // let [User,setUser]=useState(["barish","vikash","chrish"])
         
-        const deleteTodo =(t)=>{
-            let changevalue=User.filter((a)=>a!=t)
-            setUser(changevalue)
-        }
+        // const deleteTodo =(t)=>{
+        //     let changevalue=User.filter((a)=>a!=t)
+        //     setUser(changevalue)
+        // }
+        let [timer,setTimer]=useState(0);
+        let[IsTimerStart,setTimerstart]=useState(false)
+        useEffect(()=>{
+            if(IsTimerStart){
+                setTimer(timer+1)
+            }
+        },[timer,IsTimerStart])
             return(
         <>
-         <Header />
-        <table>
+         {/* <Header /> */}
+        {/* <table>
             <tr>
                 <th>order</th>
                 <th>name</th>
@@ -29,8 +36,12 @@ function Todo(){
                 )   
                 )}
             </tr>
-        </table>
-    <AddTodo setIteam={setUser} Iteam={User}/>
+        </table> */}
+    {/* <AddTodo setIteam={setUser} Iteam={User}/> */}
+    <p>Timer</p>
+    <code>{timer}</code><br></br>
+    <button type="button" onClick={()=>setTimerstart(!IsTimerStart)}>{IsTimerStart? 'stop':'start'}</button>
+    <button type="button" onClick={async ()=>{await setTimerstart(false);setTimer(0)}}>reset</button>
 
         </>
     )

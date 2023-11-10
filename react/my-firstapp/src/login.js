@@ -1,5 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
+import axios from "axios";  
 
 
 function Login(props){
@@ -15,7 +16,30 @@ function Login(props){
             props.setIsLogged({status:true,name:loginData.email})
         }
     }
-
+    function getData(){
+        axios({
+            method: 'get',
+            url: 'https://jsonplaceholder.typicode.com/posts',
+          }).then(function(response){
+                console.log(response.data)
+          })
+    }
+    function postData(){
+        axios({
+            method: 'post',
+            url:'http://agaram.academy/api/action.php',
+            data: {
+                request : "candidate_login",
+                email : "vikash@gmail.com",
+                password :12345
+                }
+          }).then(function(response){
+            console.log(response)
+      });
+    }
+    useEffect(()=>{
+        console.log(loginData.email);
+    },[loginData.email])
 
     return(
      
@@ -37,6 +61,10 @@ function Login(props){
         })}/>
         <br></br>
         <button type="button" onClick={()=>checklogin()}>login</button>
+        <button type="button" onClick={()=>getData()}>getData</button>
+        <button type="button" onClick={()=>postData()}>postData</button>
+
+
    
         </>
     )

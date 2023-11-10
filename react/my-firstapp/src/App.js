@@ -1,6 +1,6 @@
 
 import './App.css';
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 // import Header from './header';
 import Todos from './todos.js/index';
 import User from './todos.js/user';
@@ -40,6 +40,9 @@ function App() {
       element: <Todos IsLogged={IsLogged} setIsLogged={setIsLogged}/>,
     },
   ]);
+  // useEffect(()=>{
+  //   alert(1)
+  // })
   return (
     <div className="App">
       {/* <Header name={name} place="nagercoil" newname={changeName} /> */}
